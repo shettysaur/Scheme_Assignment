@@ -1,0 +1,16 @@
+#lang racket
+
+(define in (open-input-file "t0.in"))
+
+(define l '())
+
+
+(for ([i (string-split (read-line in))])
+  (display l)
+  (set! l (append l (list i)))
+  (display "\n")
+  (display (list i))
+  (display "\n")
+  )
+(display "\n")
+(display l)
